@@ -71,6 +71,7 @@ class App extends React.Component {
                   <Link className="nav-link custom-2" to="/about">About</Link>
                   <Link className="nav-link custom-2" to="/portfolio">Portfolio</Link>
                   <Link className="nav-link custom-2" to="/contact">Contact</Link>
+                  <a className="nav-link custom-2" href="https://docs.google.com/document/d/1ptWgYKf0fyzZAK1yTscVuha6xNCEcGFl8IAb_1eN_ts/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
 
                 </Nav>
               </NavBar.Collapse>
