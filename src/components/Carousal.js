@@ -8,7 +8,7 @@ import todo from '../assets/img/todo.png';
 import faceapp from '../assets/img/faceapp.png';
 import bg from '../assets/img/bg.png';
 import javatodo from '../assets/img/javatodo.png';
-import robofriends1 from '../assets/img/robofriends1.png';
+import robofriends1 from '../assets/img/robofriends.png';
 
 
 class Carousal extends React.Component {
@@ -95,7 +95,7 @@ class Carousal extends React.Component {
 
         return(
             <Container fluid={true}>
-                <Row className="">
+                <Row className="card-container">
                     {this.makeItems(this.state.items)}
                 </Row>
             </Container>
