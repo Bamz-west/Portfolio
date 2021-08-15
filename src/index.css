@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   /* max-width: 1140px; */
   /* margin: auto !important; */
@@ -31,7 +36,7 @@ body {
   margin: 0 45px 45px 0;
   transition: 0.8s !important;
   height: 500px;
-  width: 380px;
+  width: 340px;
 }
 
 .card:hover {
