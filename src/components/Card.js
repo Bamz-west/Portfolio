@@ -15,7 +15,7 @@ function Card(props) {
         //     </div>
         // </div>
 
-        <div className="d-block">
+        <div>
             <div className="card">
                 <div className="card-img">
                     <img src={props.item.imgSrc} alt={props.item.imgSrc} />
