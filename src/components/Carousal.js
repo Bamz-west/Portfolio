@@ -9,6 +9,8 @@ import faceapp1 from '../assets/img/faceapp1.png';
 import bg1 from '../assets/img/bg1.png';
 import javatodos from '../assets/img/javatodos.png';
 import robofriends1 from '../assets/img/robofriends.png';
+import covid from '../assets/img/covid.png';
+import mapPin from '../assets/img/map-pin.png';
 
 
 class Carousal extends React.Component {
@@ -19,22 +21,38 @@ class Carousal extends React.Component {
             items: [
                 {
                     id: 0,
+                    title: 'Covid-19 Tracker',
+                    subTitle: 'Detailed list of covid-19 cases in Nigeria',
+                    imgSrc: covid,
+                    link: 'https://covid19-tracker-ng.herokuapp.com/',
+                    selected: false
+                },
+                {
+                    id: 1,
+                    title: 'Map-pin App',
+                    subTitle: 'A map enabling registered users to pin and rate different locations',
+                    imgSrc: mapPin,
+                    link: 'https://travel-pin-frontend.herokuapp.com/',
+                    selected: false
+                },
+                {
+                    id: 2,
                     title: 'Face Recognition App',
-                    subTitle: 'Built with React',
+                    subTitle: 'Detects the faces on pictures uploaded',
                     imgSrc: faceapp1,
                     link: 'https://ghost-brain.herokuapp.com/',
                     selected: false
                 },
                 {
-                    id: 1,
+                    id: 3,
                     title: 'ToDo App',
-                    subTitle: 'Built with React',
+                    subTitle: 'An app for tracking tasks',
                     imgSrc: todos,
                     link: 'https://react-todo-list-application.herokuapp.com/',
                     selected: false
                 },
                 {
-                    id: 2,
+                    id: 4,
                     title: 'RoboFriends App',
                     subTitle: 'Built with React & Redux with RoboHash API',
                     imgSrc: robofriends1,
@@ -42,7 +60,7 @@ class Carousal extends React.Component {
                     selected: false
                 },
                 {
-                    id: 3,
+                    id: 5,
                     title: 'Background Generator',
                     subTitle: 'Built with javascript',
                     imgSrc: bg1,
@@ -50,7 +68,7 @@ class Carousal extends React.Component {
                     selected: false
                 },
                 {
-                    id: 4,
+                    id: 6,
                     title: 'ToDo List',
                     subTitle: 'Built with javascript',
                     imgSrc: javatodos,
@@ -58,7 +76,7 @@ class Carousal extends React.Component {
                     selected: false
                 },
                 {
-                    id: 5,
+                    id: 7,
                     title: 'Robot',
                     subTitle: 'Simple Robot built with css',
                     imgSrc: robot1,
@@ -95,7 +113,7 @@ class Carousal extends React.Component {
 
         return(
             <Container fluid={true}>
-                <Row className="card-container">
+                <Row className="card-container ml-5">
                     {this.makeItems(this.state.items)}
                 </Row>
             </Container>
